@@ -35,7 +35,7 @@ const AttendanceHistory = ({history}) => {
                   const dayType = getDayTypeDisplay(record)
 
                   return (
-                    <tr key={record._id || record._id}>
+                    <tr key={record._id || record.id}>
                       <td className='px-6 py-4 font-medium text-slate-900'>
                         {format(new Date(record.date), "MMM dd, yyyy")}
                       </td>
